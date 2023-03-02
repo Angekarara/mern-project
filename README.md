@@ -1,1 +1,1 @@
-## MERN Tutorial
+## MERN Project
