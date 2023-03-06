@@ -31,13 +31,13 @@ router.post('/', (req, res) => {
 //@access public
 
 router.delete('/:id', (req, res) => {
-    console.log(req.params)
+    // console.log(req.params)
     Item.findById(req.params.id)
-    .then(item => item.deleteOne(req.params).then(() => res.json({success: true})))
-    .catch(err => { 
-        console.log(err)
-       return res.status(404).json({success: false})
-    });
+    .then((item ) => 
+    item.deleteOne(req.params).then(() => res.json({success: true})))
+    .catch((err) =>  
+        res.status(404).json({success: false})
+    );
 
 });
 
