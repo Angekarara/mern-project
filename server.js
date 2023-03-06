@@ -27,3 +27,6 @@ mongoose
 //use routes
 
 app.use('/api/items', items);
+app.post('/api',function(req, res) {
+
+});
