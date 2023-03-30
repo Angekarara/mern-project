@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Container, ListGroup, ListGroupItem, Button } from 'reactstrap';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import uuid from 'uuid/v4';
+import {v4 as uuid} from 'uuid';
 
 const ShoppingList = () => {
   const [items, setItems] = useState([
